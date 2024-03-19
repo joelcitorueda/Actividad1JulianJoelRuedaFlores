@@ -6,13 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
+
 namespace SistemaComputadora.DAL
 {
 	public class conexion
 	{
 		public static string CONECTAR
 		{
-			get { return @"Data Source=DESKTOP-EROEUF5; Initial Catalog=master; Integrated Security=True; TrustServerCertificate=true;"; }
+			get { return @"Data Source=DESKTOP-EROEUF5; Initial Catalog=ComputadoraDB; Integrated Security=True; TrustServerCertificate=true;"; }
 			//get { return ConfigurationManager.ConnectionStrings["cadena"].ToString(); }
 		}
 		public static DataSet EjecutarDataSet(string consulta)
